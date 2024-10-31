@@ -1,0 +1,89 @@
+.pieces {
+    position: absolute;
+    left: calc(0.25*var(--tile-size));
+    right: 0;
+    top: 0;
+    bottom: calc(0.25*var(--tile-size));
+}
+
+.piece {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+}
+
+.piece-img {
+    width: 100%;
+}
+
+.piece.piece-07 {transform: translate(0%,0%);}
+.piece.piece-17 {transform: translate(100%,0%);}
+.piece.piece-27 {transform: translate(200%,0%);}
+.piece.piece-37 {transform: translate(300%,0%);}
+.piece.piece-47 {transform: translate(400%,0%);}
+.piece.piece-57 {transform: translate(500%,0%);}
+.piece.piece-67 {transform: translate(600%,0%);}
+.piece.piece-77 {transform: translate(700%,0%);}
+
+.piece.piece-06 {transform: translate(0%,100%);}
+.piece.piece-16 {transform: translate(100%,100%);}
+.piece.piece-26 {transform: translate(200%,100%);}
+.piece.piece-36 {transform: translate(300%,100%);}
+.piece.piece-46 {transform: translate(400%,100%);}
+.piece.piece-56 {transform: translate(500%,100%);}
+.piece.piece-66 {transform: translate(600%,100%);}
+.piece.piece-76 {transform: translate(700%,100%);}
+
+.piece.piece-05 {transform: translate(0%,200%);}
+.piece.piece-15 {transform: translate(100%,200%);}
+.piece.piece-25 {transform: translate(200%,200%);}
+.piece.piece-35 {transform: translate(300%,200%);}
+.piece.piece-45 {transform: translate(400%,200%);}
+.piece.piece-55 {transform: translate(500%,200%);}
+.piece.piece-65 {transform: translate(600%,200%);}
+.piece.piece-75 {transform: translate(700%,200%);}
+
+.piece.piece-04 {transform: translate(0%,300%);}
+.piece.piece-14 {transform: translate(100%,300%);}
+.piece.piece-24 {transform: translate(200%,300%);}
+.piece.piece-34 {transform: translate(300%,300%);}
+.piece.piece-44 {transform: translate(400%,300%);}
+.piece.piece-54 {transform: translate(500%,300%);}
+.piece.piece-64 {transform: translate(600%,300%);}
+.piece.piece-74 {transform: translate(700%,300%);}
+
+.piece.piece-03 {transform: translate(0%,400%);}
+.piece.piece-13 {transform: translate(100%,400%);}
+.piece.piece-23 {transform: translate(200%,400%);}
+.piece.piece-33 {transform: translate(300%,400%);}
+.piece.piece-43 {transform: translate(400%,400%);}
+.piece.piece-53 {transform: translate(500%,400%);}
+.piece.piece-63 {transform: translate(600%,400%);}
+.piece.piece-73 {transform: translate(700%,400%);}
+
+.piece.piece-02 {transform: translate(0%,500%);}
+.piece.piece-12 {transform: translate(100%,500%);}
+.piece.piece-22 {transform: translate(200%,500%);}
+.piece.piece-32 {transform: translate(300%,500%);}
+.piece.piece-42 {transform: translate(400%,500%);}
+.piece.piece-52 {transform: translate(500%,500%);}
+.piece.piece-62 {transform: translate(600%,500%);}
+.piece.piece-72 {transform: translate(700%,500%);}
+
+.piece.piece-01 {transform: translate(0%,600%);}
+.piece.piece-11 {transform: translate(100%,600%);}
+.piece.piece-21 {transform: translate(200%,600%);}
+.piece.piece-31 {transform: translate(300%,600%);}
+.piece.piece-41 {transform: translate(400%,600%);}
+.piece.piece-51 {transform: translate(500%,600%);}
+.piece.piece-61 {transform: translate(600%,600%);}
+.piece.piece-71 {transform: translate(700%,600%);}
+
+.piece.piece-00 {transform: translate(0%,700%);}
+.piece.piece-10 {transform: translate(100%,700%);}
+.piece.piece-20 {transform: translate(200%,700%);}
+.piece.piece-30 {transform: translate(300%,700%);}
+.piece.piece-40 {transform: translate(400%,700%);}
+.piece.piece-50 {transform: translate(500%,700%);}
+.piece.piece-60 {transform: translate(600%,700%);}
+.piece.piece-70 {transform: translate(700%,700%);}
