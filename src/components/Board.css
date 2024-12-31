@@ -12,7 +12,7 @@
 }
 
 .tile {
-
+    position: relative;
 }
 
 .tile--light {
@@ -21,4 +21,28 @@
 
 .tile--dark {
     background: var(--tile-dark-colour);
+}
+
+.tile--available::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(0.5 * var(--tile-size));
+    height: calc(0.5 * var(--tile-size));
+    background: var(--tile-available-colour);
+    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+}
+
+.tile--available-attack::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(var(--tile-size) - 12px);
+    height: calc(var(--tile-size) - 12px);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    border: 6px solid var(--tile-available-colour);
 }

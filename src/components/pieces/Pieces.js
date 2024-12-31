@@ -4,7 +4,7 @@ import Piece from './Piece'
 import { copyPosition } from '../../helper';
 
 import { useAppContext } from '../../context/context';
-import { makeMove } from '../../reducer/actions/move';
+import { clearAvailableMoves, makeMove } from '../../reducer/actions/move';
 
 const Pieces = () => {
     const ref = useRef();
@@ -25,9 +25,14 @@ const Pieces = () => {
         const [piece, rank, file] = event.dataTransfer.getData('text').split('/');
         const {x, y} = calcCoords(event);
         const newPosition = copyPosition(currentPosition);
-        newPosition[rank][file] = '';
-        newPosition[x][y] = piece;
-        dispatch(makeMove({newPosition}));
+
+        if(appState.availableMoves?.find(move => move[0] === x && move[1] === y)) {
+            newPosition[rank][file] = '';
+            newPosition[x][y] = piece;
+            dispatch(makeMove({newPosition}));
+        }
+
+        dispatch(clearAvailableMoves());
     }
 
     const handleOnDragOver = (event) => {

@@ -14,6 +14,20 @@ export const reducer = (state, action) => {
             }
         }
 
+        case actionTypes.GENERATE_AVAILABLE_MOVES: {
+            return {
+                ...state,
+                availableMoves: action.payload.availableMoves
+            }
+        }
+
+        case actionTypes.CLEAR_AVAILABLE_MOVES: {
+            return {
+                ...state,
+                availableMoves: []
+            }
+        }
+
         default: {
             return state;
         }

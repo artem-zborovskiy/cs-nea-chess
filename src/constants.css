@@ -2,7 +2,9 @@
     --tile-size: 100px;
     --tile-light-colour: #F0D8B7;
     --tile-dark-colour: #B48764;
-    --bg-colour: #202020
+    --bg-colour: #202020;
+    --tile-available-colour: rgba(0, 0, 0, 0.1);
+    --tile-available-attack-colour: rgba(0, 0, 0, 0.1);
 }
 
 @media all and (max-width: 450px) {

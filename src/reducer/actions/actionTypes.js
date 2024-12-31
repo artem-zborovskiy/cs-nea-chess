@@ -1,5 +1,7 @@
 const actionTypes = {
-    'MAKE_MOVE': 'MAKE_MOVE'
+    'MAKE_MOVE': 'MAKE_MOVE',
+    'GENERATE_AVAILABLE_MOVES': 'GENERATE_AVAILABLE_MOVES',
+    'CLEAR_AVAILABLE_MOVES': 'CLEAR_AVAILABLE_MOVES',
 }
 
 export default actionTypes;
