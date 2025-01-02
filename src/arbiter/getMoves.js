@@ -32,3 +32,28 @@ export const getRookMoves = ({ position, piece, rank, file }) => {
 
     return moves;
 }
+
+export const getKnightMoves = ({ position, rank, file }) => {
+    const moves = [];
+    const enemy = position[rank][file].startsWith('w') ? 'b' : 'w';
+    
+    const directions = [
+        [-2, -1],
+        [-2, 1],
+        [-1, -2],
+        [-1, 2],
+        [1, -2],
+        [1, 2],
+        [2, -1],
+        [2, 1]
+    ];
+
+    directions.forEach((direction) => {
+        const targetSquare = position?.[rank + direction[0]]?.[file + direction[1]];
+        if(targetSquare !== undefined && (targetSquare.startsWith(enemy) || targetSquare === '')) {
+            moves.push([rank + direction[0], file + direction[1]]);
+        }
+    })
+
+    return moves;
+}
