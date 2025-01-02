@@ -92,3 +92,12 @@ export const getBishopMoves = ({ position, piece, rank, file }) => {
 
     return moves;
 }
+
+export const getQueenMoves = ({ position, piece, rank, file }) => {
+    const moves = [
+        ...getRookMoves({position, piece, rank, file}),
+        ...getBishopMoves({position, piece, rank, file})
+    ];
+
+    return moves;
+}
