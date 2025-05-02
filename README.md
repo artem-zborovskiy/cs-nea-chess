@@ -2,29 +2,6 @@
 
 A full-stack web-based chess game built with a React frontend and Node.js backend.
 
-## Project Structure
-
-├── backend # Node.js backend for managing game logic and server operations
-│ ├── models # Data models (e.g., users, games)
-│ ├── index.js # Entry point for the backend server
-│ └── package.json # Backend dependencies
-│
-├── frontend # React-based frontend
-│ ├── public # Static assets
-│ ├── src
-│ │ ├── assets # Images and media
-│ │ ├── chessBoard # Chessboard UI components
-│ │ ├── components # Reusable UI components
-│ │ ├── contexts # React context providers
-│ │ ├── engine # Game logic or chess engine interface
-│ │ ├── pages # App pages/views
-│ │ ├── index.js # React app entry point
-│ │ └── index.css # Global styles
-│ └── package.json # Frontend dependencies
-│
-├── .gitignore
-└── README.md
-
 ## Features
 
 - Interactive chessboard with real-time move validation
@@ -57,7 +34,7 @@ A full-stack web-based chess game built with a React frontend and Node.js backen
     cd backend
     npm install
 
-    cd ../frontend
+    cd frontend
     npm install
 
 3.  Run the backend
@@ -68,7 +45,7 @@ A full-stack web-based chess game built with a React frontend and Node.js backen
 
 4. Run the frontend
 
-    cd ../frontend
+    cd frontend
     npm start
 
 The frontend will usually run at http://localhost:3000 and the backend at http://localhost:3001
