@@ -1,0 +1,6 @@
+:root {
+    --square-size: 100px;
+    --square-light: #E0E0E0;
+    --square-dark: #333333;
+    --square-available: rgba(0, 0, 0, 0.3);
+}

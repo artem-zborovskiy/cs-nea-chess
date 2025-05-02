@@ -1,0 +1,66 @@
+/* Styling for buttons that are used to alternate between two forms (Sign In / Sign Up) */
+.button-form {
+    color: #FFFFFF;
+    background-color: #282828;
+    padding: 10px 30px;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.2s; /* Smooth hover effect */
+    cursor: pointer;
+    flex: 1; /* Make buttons share equal space */
+}
+
+/* Hover effect and active state currently active tab */
+.button-form:hover, .active {
+    background-color: #320064;
+}
+
+/* Rounded corners for the left button */
+.left {
+    border-radius: 10px 0 0 10px;
+}
+
+/* Rounded corners for the right button */
+.right {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Form container layout */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Match header width for visual alignment */
+    gap: 30px; /* Space between form fields */
+}
+
+.form-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Style for input fields inside the form */
+.form-input {
+    outline: 0; /* Remove default browser outline */
+    padding: 10px 20px; /* Inner space for text */
+    background-color: transparent; /* Transparent background for cleaner look */
+    border: 1px solid #282828; /* Dark border by default */
+    border-radius: 10px; /* Smooth rounded corners */
+    color: white; /* Input text color */
+}
+
+/* Change border color when the input is focused (clicked on) */
+.form-input:focus {
+    border-color: #320064; /* Highlighted border on focus */
+}
+
+.information {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}

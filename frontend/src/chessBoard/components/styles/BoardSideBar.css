@@ -1,0 +1,31 @@
+/* Style for the move list container */
+.moveList {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    height: calc(8 * var(--square-size));  /* Set the height of the container based on the board's square size */
+    background-color: black;
+    flex: 0.4 1;  /* Allow the move list to take up 40% of available space in the parent container */
+    flex-wrap: wrap;  /* Allow child elements to wrap if they overflow the container */
+    align-content: start;  /* Align wrapped content to the start of the container */
+    overflow: auto;
+    min-width: 300px;
+}
+
+/* Style for each individual move item in the move list */
+.moveList div {
+    flex-basis: 50%;  /* Each move item will take up 35% of the available width in the container */
+    padding-left: 15%;  /* Add left padding to create some space between moves */
+    text-align: left;
+    position: relative;  /* Allow for positioning of pseudo-elements (e.g., ::before) */
+    padding-bottom: 5px;
+}
+
+/* Style for odd-numbered move items with a 'data-number' attribute */
+.moveList div[data-number]:nth-child(odd)::before {
+    content: attr(data-number);  /* Insert the value of the 'data-number' attribute before the move content */
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}

@@ -1,0 +1,25 @@
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+}
+
+.main-img {
+    width: 500px;
+    height: 500px;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-text {
+    width: 70%;
+}

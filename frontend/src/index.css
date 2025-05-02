@@ -1,0 +1,59 @@
+/* Apply box-sizing: border-box to all elements and their :before and :after pseudo-elements */
+*, *:before, *:after {
+    /* Ensure padding and border are included inside the element's total width and height for WebKit browsers (Safari, older Chrome) */
+    -webkit-box-sizing: border-box;
+    
+    /* Ensure compatibility with older versions of Firefox */
+    -moz-box-sizing: border-box;
+    
+    /* Standard box-sizing rule for all modern browsers */
+    box-sizing: border-box;
+}
+
+/* Style the html, body, and the #root container */
+html, body, #root {
+    /* Remove default margins set by browsers */
+    margin: 0;
+    
+    /* Remove default padding */
+    padding: 0;
+    
+    /* Set a clean, modern font for the whole app */
+    font-family: "Open Sans", sans-serif;
+    
+    /* Make sure the html, body, and #root take full height of the viewport */
+    height: 100%;
+    
+    /* Set a dark background color for the entire app */
+    background-color: #141414;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.button-default {
+    color: #FFFFFF;
+    background-color: #282828;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button-default:hover {
+    background-color: #320064;
+}

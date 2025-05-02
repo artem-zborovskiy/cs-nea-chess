@@ -1,0 +1,16 @@
+/* Main container that centers everything vertically and horizontally */
+.form-main {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between elements inside main */
+}
+
+/* Header section containing buttons, spaced horizontally */
+.form-header {
+    display: flex;
+    flex-direction: row;
+    width: 60%; /* Responsive width */
+}

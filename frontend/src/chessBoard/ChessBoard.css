@@ -1,0 +1,64 @@
+@import "./constants.css"; /* Import shared variables like --cell-size from another CSS file */
+
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: calc(0.25 * var(--square-size)) calc(8 * var(--square-size));
+    width: fit-content; /* Only as wide as content */
+    height: fit-content; /* Only as tall as content */
+    position: relative;
+}
+
+.squares {
+    display: grid; /* Use CSS Grid to layout the squares */
+    grid-template-columns: repeat(8, var(--square-size)); /* Create 8 equal-width columns */
+    grid-template-rows: repeat(8, var(--square-size)); /* Create 8 equal-height rows */
+    width: calc(8 * var(--square-size)); /* Set board width to 8 times the cell size (corrected syntax) */
+    width: fit-content; /* Only as wide as content */
+    height: fit-content; /* Only as tall as content */
+}
+
+.square-light {
+    background-color: var(--square-light);
+}
+
+.square-dark {
+    background-color: var(--square-dark);
+}
+
+.square {
+    position: relative
+}
+
+.available-empty:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width : calc(0.5 * var(--square-size));
+    height : calc(0.5 * var(--square-size));
+    background: var(--square-available);
+    border-radius: 50%;
+    left: 25%;
+    top: 25%;
+}
+
+.available-capture:after {
+    display: block;
+    position: absolute;
+    content: '';
+    border: 6px solid var(--square-available);
+    width : calc(var(--square-size));
+    height : calc(var(--square-size));
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+}
+
+.checked {
+    border: 3px solid red;
+}

@@ -1,0 +1,7 @@
+.pieces-grid {
+    position: absolute;
+    left: calc(0.25 * var(--square-size)); /* Consider size of the ranks */
+    right: 0;
+    top: 0;
+    bottom: calc(0.25 * var(--square-size));  /* Consider size of the files */
+}

@@ -1,0 +1,23 @@
+.endgame-popup, .endgame-popup * {
+    box-sizing: content-box;
+}
+
+.endgame-popup {
+    position: absolute;
+    left: calc(0.25 * var(--square-size));
+    right: 0;
+    top: 0;
+    bottom: calc(0.25 * var(--square-size));
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.endgame-popup-content {
+    background-color: black;
+    text-align: center;
+    padding: var(--square-size);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

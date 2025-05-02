@@ -1,0 +1,8 @@
+.files {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: calc(0.25 * var(--square-size));
+}
